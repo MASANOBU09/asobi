@@ -1,0 +1,522 @@
+<header id="commonHeader">
+<section id="flowsHead" class="wf-mplus1p">あなたがいまするべき遊びが1分でわかる</section>
+<section id="flows" class="wf-mplus1p">遊び診断</section>
+</header>
+
+<div id="wrapper">
+   <div class="sense">
+        <article id="pageBody">
+
+            <div class="point_box">
+            <div class="box">
+            <div class="txt">
+            <p>下記の質問に答えてみてください。あなたにぴったりの遊びがわかります!</p>
+            </div>
+            </div>
+            </div>
+
+
+            <ul class="qalist wf-mplus1p">
+
+            <li id="1" class="question">
+                <a name="#1"></a>
+                <div class="qbox"><span  class="q">Q.</span>泊まる？</div>
+                <div class="qabox">
+                    <a href="#2" onclick="show(2)" class="qabtn"><div class="btnBox btnBox_y">泊まる</div></a>
+                    <a href="#3" onclick="show(3)" class="qabtn"><div class="btnBox btnBox_n">泊まらない</div></a>
+                   
+                </div>
+            </li>
+            <li id="2" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>なにしたい？</div>
+                <div class="qabox">
+                    <a href="#4" onclick="show(4)" class="qabtn"><div class="btnBox btnBox_y">観光</div></a>
+                    <a href="#5" onclick="show(5)" class="qabtn"><div class="btnBox btnBox_n">温泉</div></a>
+                    <a href="#6" onclick="show(6)" class="qabtn"><div class="btnBox btnBox_x">ウインタースポーツ</div></a>
+                </div>
+            </li>
+            <li id="3" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>どっち？</div>
+                <div class="qabox">
+                    <a href="#7" onclick="show(7)" class="qabtn"><div class="btnBox btnBox_y">1日中</div></a>
+                    <a href="#8" onclick="show(8)" class="qabtn"><div class="btnBox btnBox_n">半日以下</div></a>
+                </div>
+            </li>
+            <li id="4" class="question" style="display:none;">
+            <a name="#"></a>
+            <div class="qbox"><span  class="q">Q.</span>好きなのは？</div>
+            <div class="qabox">
+                <a href="#-1" onclick="show(-1)" class="qabtn"><div class="btnBox btnBox_y">古風</div></a>
+                <a href="#-2" onclick="show(-2)" class="qabtn"><div class="btnBox btnBox_n">食べ歩き</div></a>
+                <a href="#-3" onclick="show(-3)" class="qabtn"><div class="btnBox btnBox_x">自然</div></a>
+                <a href="#-4" onclick="show(-4)" class="qabtn"><div class="btnBox btnBox_z">異国</div></a>
+                
+            </div>
+             </li>
+             <li id="5" class="question" style="display:none;">
+             <a name="#"></a>
+             <div class="qbox"><span  class="q">Q.</span>質は？</div>
+             <div class="qabox">
+                 <a href="#-5" onclick="show(-5)" class="qabtn"><div class="btnBox btnBox_y">泉質が良い</div></a>
+                 <a href="#-6" onclick="show(-6)" class="qabtn"><div class="btnBox btnBox_n">ピリピリ</div></a>
+                 <a href="#-7" onclick="show(-7)" class="qabtn"><div class="btnBox btnBox_x">トロトロ</div></a>
+                 <a href="#-8" onclick="show(-8)" class="qabtn"><div class="btnBox btnBox_z">さらさら</div></a>
+             </div>
+              </li>
+            </ul>
+            <li id="6" class="question" style="display:none;">
+             <a name="#"></a>
+             <div class="qbox"><span  class="q">Q.</span>あてはまるのは？</div>
+             <div class="qabox">
+                 <a href="#-9" onclick="show(-9)" class="qabtn"><div class="btnBox btnBox_y">初心者用</div></a>
+                 <a href="#-10" onclick="show(-10)" class="qabtn"><div class="btnBox btnBox_n">中・上級者用</div></a>
+                 <a href="#-11" onclick="show(-11)" class="qabtn"><div class="btnBox btnBox_x">景観が良い</div></a>
+                 <a href="#-12" onclick="show(-12)" class="qabtn"><div class="btnBox btnBox_z">コースが長い</div></a>
+             </div>
+              </li>
+            </ul>
+            <li id="7" class="question" style="display:none;">
+             <a name="#"></a>
+             <div class="qbox"><span  class="q">Q.</span>どこがいい？</div>
+             <div class="qabox">
+                 <a href="#9" onclick="show(9)" class="qabtn"><div class="btnBox btnBox_y">テーマパーク</div></a>
+                 <a href="#10" onclick="show(10)" class="qabtn"><div class="btnBox btnBox_n">自然</div></a>
+                 <a href="#11" onclick="show(11)" class="qabtn"><div class="btnBox btnBox_x">アドベンチャー</div></a>
+             </div>
+              </li>
+            </ul>
+            <li id="8" class="question" style="display:none;">
+            <a name="#"></a>
+            <div class="qbox"><span  class="q">Q.</span>決まった時間がいい？</div>
+            <div class="qabox">
+                <a href="#13" onclick="show(13)" class="qabtn"><div class="btnBox btnBox_y">はい</div></a>
+                <a href="#14" onclick="show(14)" class="qabtn"><div class="btnBox btnBox_n">いいえ</div></a>
+            </div>
+             </li>
+           </ul>
+            <li id="9" class="question" style="display:none;">
+            <a name="#"></a>
+            <div class="qbox"><span  class="q">Q.</span>好きな絶叫度合いは？</div>
+            <div class="qabox">
+               <a href="#-13" onclick="show(-13)" class="qabtn"><div class="btnBox btnBox_y">大</div></a>
+               <a href="#-14" onclick="show(-14)" class="qabtn"><div class="btnBox btnBox_n">中</div></a>
+               <a href="#-15" onclick="show(-15)" class="qabtn"><div class="btnBox btnBox_x">小</div></a>
+            </div>
+             </li>
+           </ul>
+           <li id="10" class="question" style="display:none;">
+           <a name="#"></a>
+           <div class="qbox"><span  class="q">Q.</span>行くなら？</div>
+           <div class="qabox">
+               <a href="#-16" onclick="show(-16)" class="qabtn"><div class="btnBox btnBox_y">川</div></a>
+               <a href="#-17" onclick="show(-17)" class="qabtn"><div class="btnBox btnBox_n">空</div></a>
+           </div>
+            </li>
+          </ul>
+          <li id="11" class="question" style="display:none;">
+          <a name="#"></a>
+          <div class="qbox"><span  class="q">Q.</span>どっちがいい？</div>
+          <div class="qabox">
+             <a href="#-18" onclick="show(-18)" class="qabtn"><div class="btnBox btnBox_y">外</div></a>
+             <a href="#-19" onclick="show(-19)" class="qabtn"><div class="btnBox btnBox_n">内</div></a>
+          </div>
+           </li>
+         </ul>
+         <li id="12" class="question" style="display:none;">
+         <a name="#"></a>
+         <div class="qbox"><span  class="q">Q.</span>決まった時間がいい？</div>
+         <div class="qabox">
+            <a href="#13" onclick="show(13)" class="qabtn"><div class="btnBox btnBox_y">はい</div></a>
+            <a href="#14" onclick="show(14)" class="qabtn"><div class="btnBox btnBox_n">いいえ</div></a>
+         </div>
+          </li>
+        </ul>
+        <li id="13" class="question" style="display:none;">
+        <a name="#"></a>
+        <div class="qbox"><span  class="q">Q.</span>好きなのは？</div>
+        <div class="qabox">
+           <a href="#-20" onclick="show(-20)" class="qabtn"><div class="btnBox btnBox_y">物語</div></a>
+           <a href="#-21" onclick="show(-21)" class="qabtn"><div class="btnBox btnBox_n">映像</div></a>
+        </div>
+         </li>
+       </ul>
+       <li id="14" class="question" style="display:none;">
+        <a name="#"></a>
+        <div class="qbox"><span  class="q">Q.</span>どっち？</div>
+        <div class="qabox">
+           <a href="#-22" onclick="show(-22)" class="qabtn"><div class="btnBox btnBox_y">歩きたい</div></a>
+           <a href="#-23" onclick="show(-23)" class="qabtn"><div class="btnBox btnBox_n">座っていたい</div></a>
+        </div>
+         </li>
+       </ul>
+       
+
+            <div class="answerList">
+
+                <div id="-1" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める観光は<span class="fs-18"><span class="bg-y">『兼六園』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'kenrokuen.jpg' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+
+                    <p><a href="https://www.pref.ishikawa.jp/siro-niwa/kenrokuen/" class="square_btn">もっと詳しくみる</a></p>
+
+                    </div>
+                    </div>
+                </div>
+                 <div id="-2" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める観光は<span class="fs-18"><span class="bg-y">『中華街』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'chuukagai' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                       <p><a href="https://www.chinatown.or.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-3" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める観光は<span class="fs-18"><span class="bg-y">『軽井沢』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'karuizawa' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-4" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める観光は<span class="fs-18"><span class="bg-y">『志摩地中海村』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'sima' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.puebloamigo.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-5" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める温泉は<span class="fs-18"><span class="bg-y">『草津温泉』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'kusatu' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.kusatsu-onsen.ne.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-6" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める温泉は<span class="fs-18"><span class="bg-y">『南紀白浜温泉』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'minami' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="http://www.shirahama-ryokan.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-7" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める温泉は<span class="fs-18"><span class="bg-y">『馬頭温泉』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'batou' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="http://bato-onsenkyo.com/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-8" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める温泉は<span class="fs-18"><span class="bg-y">『小田原温泉』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'odawara' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.odawara-kankou.com/topics/article/onsen.html" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-9" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるゲレンデは<span class="fs-18"><span class="bg-y">『舞子スノーリゾート』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'maiko' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.maiko-resort.com/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-10" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるゲレンデは<span class="fs-18"><span class="bg-y">『志賀高原スキー場』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'siga' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://shigakogen-ski.or.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-11" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるゲレンデは<span class="fs-18"><span class="bg-y">『蔵王温泉スキー場』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'zaou' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.zao-ski.or.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-12" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるゲレンデは<span class="fs-18"><span class="bg-y">『野沢温泉スキー場』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'nozawa' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://nozawaski.com/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-13" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるテーマパークは<span class="fs-18"><span class="bg-y">『富士急ハイランド』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'hujikyuu' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.fujiq.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-14" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるテーマパークは<span class="fs-18"><span class="bg-y">『ユニバーサルスタジオジャパン』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'usj' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.usj.co.jp/web/ja/jp" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-15" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるテーマパークは<span class="fs-18"><span class="bg-y">『ディズニー』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'disney' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.tokyodisneyresort.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-16" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『ラフティング』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'rafu' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.asoview.com/leisure/5/location/rgn04/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-17" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『ドラゴンキャッスル』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'doragon' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://mishima-skywalk.jp/activities/dragon-castle/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-18" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『サバゲー』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'sabage' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.jalan.net/kankou/pro_003/g2_g3/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-19" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『vsパーク』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'vs' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://bandainamco-am.co.jp/others/vspark/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-20" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『映画鑑賞』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'eiga' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://eiga.com/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-21" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『プラネタリウム』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'pura' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://planetarium.konicaminolta.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-22" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『美術館』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'bijyutu' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.tobikan.jp/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 <div id="-23" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める遊びは<span class="fs-18"><span class="bg-y">『シーシャバー』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag 'sisha' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="https://www.beyondvape.jp/cts/news/tokyo-shisha/" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                 
+
+
+
+        </article>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function(){
+   $('a[href^=#]').click(function() {
+      var speed = 600;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+$(function(){
+    h = $(window).height();
+    h = h-30;
+    $(".question").css("min-height", h + "px");
+    $(".answerList .box").css("min-height", h + "px");
+    
+});
+function show(idName){ 
+    $("#" + idName).show();
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+

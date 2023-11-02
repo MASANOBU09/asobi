@@ -1,0 +1,33 @@
+<h1>自分の題名</h1>
+<h3>一覧ページ</h3>
+
+
+<h3>投稿を検索</h3>
+
+ <%= form_tag({controller:"vacations",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <%= submit_tag '検索する'  %>
+<% end %>
+<%= link_to "新規投稿へ", new_vacation_path %>
+<%= page_entries_info @vacations %>
+<%= paginate @vacations %>
+<div class="vacations-container">
+  <% @vacations.each do |t| %>
+    <div class="vacation">
+    <%= image_tag t.image_url, size: "250x200" if t.image? %>
+      <%= t.name %>
+      <%= t.date %>
+      <%= t.price %>
+      <%= t.place %>
+      <%= t.people %>
+      <div>
+    <h2>総合評価：
+    <span class="star-rating">
+       <span class="star-rating-front" style="width: <%= getPercent(t.overall) %>%;">★★★★★</span>
+       <span class="star-rating-back">★★★★★</span>
+    </span> 
+    </h2>
+    </div>
+    </div>
+  <% end %>
+</div>
