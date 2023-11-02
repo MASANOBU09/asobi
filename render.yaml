@@ -1,6 +1,6 @@
 databases:
   - name: asobi_DB
-    databaseName: asobi_db
+    databaseName: asobi_db_cgtb
     user: asobi
     region: singapore
 
