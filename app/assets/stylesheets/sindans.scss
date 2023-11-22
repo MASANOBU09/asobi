@@ -15,29 +15,27 @@ th{font-weight:700;vertical-align:top;word-break:break-all;word-wrap:break-word}
 td{font-weight:400;vertical-align:top;word-break:break-all;word-wrap:break-word}
 
 body {
-    font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-family: "Open Sans","メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
     font-size: 14px;
     line-height: 1;
     color: #535353;
 }
 
-.wf-mplus1p { font-family: "Mplus 1p"; }
+
 
 
 #commonHeader {
     position: relative;
     margin: 0 auto;
-  
-    
-    color: #5391BA;
+    color: #0c0c0b;
     font-weight: bold;
     text-align: center;
     padding: 0.25em;
-    border-top: solid 2px #6cb4e4;
-    border-bottom: solid 2px #6cb4e4;
+    border-top: solid 2px #188314;
+    border-bottom: solid 2px #188314;
     background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
     background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-
+    top: 20px; /* 例: 20px だけ下に移動 */
 }
 #commonHeader section#flows {
     margin: 0 auto;
@@ -105,7 +103,7 @@ article:after, section:after, .clrFx:after {
     font-size: 25px;
     color: #282828;
     text-align: center;
-    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+    font-family: "Open Sans","游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
 }
 .hds_answer {
     position: relative;
@@ -148,10 +146,9 @@ article:after, section:after, .clrFx:after {
 
 .qbox{
     text-align:center;
-    
-
 }
 .qabox{
+
     width:300px;
     margin: 0 auto;
 }
@@ -207,6 +204,7 @@ article:after, section:after, .clrFx:after {
 }
 
 .btnBox{
+    font-family: "Open Sans",'FontAwesome','Quicksand','Avenir','Arial',sans-serif;
     text-align:center;
     width: 300px;
     float: left;
@@ -223,7 +221,7 @@ article:after, section:after, .clrFx:after {
 }
 
 .btnBox_y{
-    background-color: #FF8DB4;
+    background-color: rgb(134, 192, 68);
     margin-right: 40px;
 }
 
@@ -265,7 +263,8 @@ article:after, section:after, .clrFx:after {
 
 
 .q{
-    font-family: "Mplus 1p";
+    font-family:"Open Sans" "Mplus 1p";
+    font-weight: bold;
     font-size:300%;
     height: 50px;
     color:#F55257;
@@ -276,8 +275,9 @@ article:after, section:after, .clrFx:after {
     background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
     background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
     padding: 4px;
-    margin: 10px 5px 10px;
-    font-size:110%;
+    margin: 10px 5px 10px 0; /* 上右下左の順で指定。下に10pxの余白を持つように調整 */
+    font-size: 110%;
+    font-weight: bold;
 }
 
 .point_box .box {
@@ -304,7 +304,7 @@ article:after, section:after, .clrFx:after {
 
 .point_box .title:after {/*タブ*/
     position: absolute;
-    font-family: FontAwesome,'Quicksand','Avenir','Arial',sans-serif;
+    font-family: "Open Sans",'FontAwesome','Quicksand','Avenir','Arial',sans-serif;
     content: '\f0a7\ Result';
     background: #80c8d1;
     color: #fff;
@@ -334,9 +334,9 @@ article:after, section:after, .clrFx:after {
     color: #D03F37;
 }
 .img {
-    margin: 0 auto 10px;
+    margin: 0 auto 0px;
     width: 900px;
-    height: 700px;
+    height: 500px;
 }
 .img img {
     width: 100%;

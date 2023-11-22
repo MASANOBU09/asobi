@@ -1,0 +1,20 @@
+<div class='show_all'>
+
+    <div class=show_head>
+        遊びの詳細
+    </div>
+
+    <div class="show_body">
+        <div class='show_body1'><%= @vacation.name %></div>
+        <div class='show_body2'>
+        <%= image_tag @vacation.image_url, size: "450x300" if @vacation.image? %></div>
+        <div class='show_body3'>場所・・・<%= @vacation.place %></div>
+        <div class='show_body4'>値段・・・<%= @vacation.price %></div>
+        <div class='show_body5'>日数・・・<%= @vacation.date %></div>
+    </div>
+
+    <div class=show_foot>
+      <%= link_to "遊び一覧に戻る", vacations_path %>
+    </div>
+
+</div>

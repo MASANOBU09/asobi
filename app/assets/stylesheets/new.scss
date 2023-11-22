@@ -1,0 +1,47 @@
+/*　新規投稿ページ*/
+.new_asobi{
+    text-align: center;
+    padding: 200px 300px;
+    
+    .new_asobi_head{
+      font-size: large;
+      font-weight: bold;
+    }
+    .new_asobi_body{
+      text-align: center;
+      background-color: #cccccc71
+      
+      
+    }
+      /*　以下新規投稿ページの星用のCSS　*/
+
+    .post_form{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    .post_form input[type='radio']{
+      display: none;
+    }
+    /*　上記でラジオボタンを隠す。 */
+
+    .post_form label{
+      position: center;
+      padding: 10px 10px 0;
+      color: gray;
+      cursor: pointer;
+      font-size: 30px; /*星の大きさを変更するときはここ*/
+    }
+    .post_form label .text{
+      position: center;
+      text-align: center;
+      font-size: 9px; /*星の上の説明書きの大きさを変更するときはここ*/
+      color: gray;
+    }
+    .post_form label:hover,
+    .post_form label:hover ~ label,
+    .post_form input[type='radio']:checked ~ label{
+      color: #ffcc00;
+   }
+  
+}

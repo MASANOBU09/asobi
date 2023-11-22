@@ -1,0 +1,144 @@
+/*　一覧ページ　*/
+.search_box {
+  text-align: center;
+
+  /* 検索フォームのスタイル */
+  .search-form {
+    margin-bottom: 20px;
+  }
+
+  /* 新規投稿ボタンのスタイル */
+  .new_to_vacation {
+    margin-top: 40px;
+    text-align: center; /* テキストを中央揃え */
+  }
+
+  .button2 {
+    font-weight: bold;
+    background-color: rgb(236, 44, 44); /* ボタンの背景色 */
+    color: #fff; /* テキスト色 */
+    border: none; /* ボーダーなし */
+    padding: 10px 10px; /* パディング（上下左右） */
+    text-align: center; /* テキストを中央揃え */
+    text-decoration: none; /* リンクの下線などを削除 */
+    display: inline-block;
+    font-size: 15px; /* テキストサイズ */
+    border-radius: 5px; /* ボタンの角を丸める */
+    cursor: pointer; /* マウスカーソルをポインターに変更（ホバー時） */
+  }
+}
+.button2:hover {
+  background-color: rgb(228, 85, 85); /* ホバー時の背景色変更 */
+  color:rgb(248, 245, 245) ;
+}
+
+/* 全体のコンテナ */
+.vacations-container {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:20px auto;
+  padding: 20px; /* 余白を追加 */
+  height: 1000px;
+  margin-bottom: 300px;
+
+  .vacations-container1{
+    display:flex;
+    justify-content: space-around; /* アイテムを左右に均等に配置 */
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 600px;
+    height: 480px;
+    
+    .vacation0{
+      background-color: #ffffff;
+      border: 2px solid #000; /* 黒い枠線を追加 */
+      .vacation1{text-align: center;}
+      .vacation2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      .vacation4{text-align: center;}
+      .vacation5{text-align: center;}
+      .vacation6{text-align: center;}
+      .vacation7{text-align: center;}
+      /* 投稿内容のコンテナ */
+      .post-container {
+        border: 1px solid #ddd;
+        padding: 20px; /* 余白を追加 */
+        margin-bottom: 20px;
+        border-radius: 8px; /* 角丸を追加 */
+        background-color: #fff; /* 背景色を変更 */
+        width: 450px; /* 幅を450pxに固定 */
+        display: inline-block;
+        box-sizing: border-box;
+        margin-right: 20px; /* 右のマージンを追加 */
+      }
+      
+      /* 投稿者名のスタイル */
+      .post-name {
+        font-size: 1.2em; /* フォントサイズを調整 */
+        font-weight: bold;
+        color: #007bff; /* テキストの色を変更 */
+        margin-top: 10px; /* 上のマージンを追加 */
+      }
+
+      /* 画像のスタイル */
+      .post-image {
+        max-width: 500px;
+        height: auto;
+        border-radius: 8px; /* 角丸を追加 */
+        margin-top: 10px; /* 上のマージンを追加 */
+      }
+
+      /* 総合評価のスタイル */
+      .post-rating {
+        margin-top: 10px; /* 上のマージンを追加 */
+      }
+      .star-rating {
+        position: relative;
+        display: inline-block;
+        width: 5em;
+        height: 1em;
+        font-size: 25px;
+        
+      }
+      .star-rating-front {
+        display: inline-block;
+        position: absolute;/* .star-rating-frontを最上面に */
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        color: #ffcc33;
+      }
+      .star-rating-back {
+        display: inline-block;
+        color: #ccc; 
+      }
+    }
+  }
+}
+
+.index_under{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* ページ移動のリンクのスタイル */
+  .pagination {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* 上のマージンを追加 */
+    position: fixed; /* 固定位置指定 */
+    bottom: 20px; /* 画面下からの距離 */
+    left: 50%; /* 画面中央に配置 */
+    transform: translateX(-50%); /* 中央揃え */
+    background-color: #fff; /* 背景色を変更 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}

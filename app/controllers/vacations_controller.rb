@@ -1,10 +1,13 @@
 class VacationsController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create]
+    def top
+      
+    end
     def index
       @vacations = Vacation.all
     search = params[:search]
     @vacations = @vacations.joins(:user).where("name LIKE ?", "%#{search}%") if search.present?
-    @vacations = @vacations.page(params[:page]).per(3)
+    @vacations = @vacations.page(params[:page]).per(8)
     end
        
     
@@ -15,13 +18,19 @@ class VacationsController < ApplicationController
     
       def create
         vacation = Vacation.new(vacation_params)
-        vacation.user_id = current_user.id 
-        if vacation.save
-          redirect_to :action => "index"
-        else
-          redirect_to :action => "new"
+        vacation.user_id = current_user.id
+      
+        # もし画像がアップロードされていない場合
+        if params[:vacation][:image].blank?
+          # デフォルト画像のパスを指定
+          vacation.image = ActionController::Base.helpers.asset_path('default_image.jpg')
         end
-
+      
+        if vacation.save
+          # 保存成功の処理
+        else
+          # 保存失敗の処理
+        end
       end
     
       def show
@@ -51,6 +60,6 @@ class VacationsController < ApplicationController
     
       private
       def vacation_params
-        params.require(:vacation).permit(:name, :date, :price, :place, :people, :image, :overall)
+        params.require(:vacation).permit(:name, :date, :price, :place, :people, :image, :other_attributes, :overall)
       end
 end
