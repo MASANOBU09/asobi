@@ -1,29 +1,46 @@
 .show_all{
-    padding-left: 600px;
+    
     .show_head{
-        
+        text-align: center;
         font-weight: bold; /* フォントを太くする */
         /* テキストを水平方向に中央揃えにする */
         line-height: 1.5; /* テキストボックスの高さに合わせて垂直方向に中央揃えにする */
         margin: 20px 0; /* 上下に20pxの余白を追加 */
-        font-size: 18px; /* 文字の大きさを指定 */
+        font-size: 36px; /* 文字の大きさを指定 */
     }
     .show_body{
-        text-align: center; 
-        border: 2px solid #000; /* 黒い枠線を追加 */
-        width: 500px;
-        
-        
-        .show_body1{
-            
-            font-weight: bold;
-            font-size: 36px; 
+        display:flex;
+        .show_a{
+            padding-left: 200px;
+            .show_body1{
+                font-weight: bold;
+                font-size: 48px; 
+            }
+            .show_body2{font-weight: bold;}
         }
-        .show_body2{font-weight: bold;}
-        .show_body3{font-weight: bold;}
-        .show_body4{font-weight: bold;}
-        .show_body5{font-weight: bold;}
+        .show_b{
+            padding-left: 50px;
+            font-size: 30px;
+            margin-top: 100px;
+            width: 600px;
 
+            .show_body3{
+                padding-top: 20px;
+                font-weight: bold;
+            }
+            .show_body4{
+                padding-top: 20px;
+                font-weight: bold;
+            }
+            .show_body5{
+                padding-top: 20px;
+                font-weight: bold;
+            }
+            .show_body6{
+                padding-top: 40px;
+                font-weight: bold;
+            }
+        }
     }
     .show_foot{
         

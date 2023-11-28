@@ -99,8 +99,8 @@
       z-index: 20;
       top: 0;
       left: 0;
-      border-top: 2px solid #000000;
-      border-bottom: 2px solid #000000;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
       transition: border-width 100ms 1500ms ease,
                   top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
                   height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -117,7 +117,7 @@
       z-index: 20;
       top: 10px;
       right: 4px;
-      background-color: #000000;
+      background-color: white;
       margin-top: -1px;
       transition: width 100ms 1750ms ease,
                   right 100ms 1750ms ease,
@@ -128,7 +128,7 @@
       top: 10px;
       transform: rotate(45deg);
       height: 2px;
-      background-color: #000000;
+      background-color: white;
       border-width: 0;
       transition: border-width 100ms 340ms ease,
                   top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -159,7 +159,7 @@
       z-index: 9;
       overflow: hidden;
       box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(21, 153, 61);
       animation: border-transform 7s linear infinite;
       transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
                   right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -236,12 +236,12 @@
       font-weight: 800;
       display: inline-block;
       position: relative;
-      color: #000000;
+      color: white0;
       transition: all 250ms linear;
     }
     .nav ul li a:hover{
       text-decoration: none;
-      color: #000000;
+      color: white;
     }
     .nav ul li a:after{
       display: block;
@@ -252,7 +252,7 @@
       margin-top: -1vh;
       width: 0;
       left: 0;
-      background-color: #000000;
+      background-color: white;
       opacity: 0.8;
       transition: width 250ms linear;
     }

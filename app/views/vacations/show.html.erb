@@ -5,12 +5,20 @@
     </div>
 
     <div class="show_body">
-        <div class='show_body1'><%= @vacation.name %></div>
-        <div class='show_body2'>
-        <%= image_tag @vacation.image_url, size: "450x300" if @vacation.image? %></div>
-        <div class='show_body3'>場所・・・<%= @vacation.place %></div>
-        <div class='show_body4'>値段・・・<%= @vacation.price %></div>
-        <div class='show_body5'>日数・・・<%= @vacation.date %></div>
+
+        <div class='show_a'>
+            <div class='show_body1'><%= @vacation.name %></div>
+            <div class='show_body2'>
+            <%= image_tag @vacation.image_url, size: "600x400" if @vacation.image? %></div>
+        </div>
+
+        <div class='show_b'>
+            <div class='show_body3'>・場所...<%= @vacation.place %></div>
+            <div class='show_body4'>・値段...<%= @vacation.price %></div>
+            <div class='show_body5'>・日数...<%= @vacation.date %></div>
+            <div class='show_body6'>・感想...<%= @vacation.review %></div>
+         </div>
+
     </div>
 
     <div class=show_foot>

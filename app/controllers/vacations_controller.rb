@@ -17,8 +17,8 @@ class VacationsController < ApplicationController
       end
     
       def create
-        vacation = Vacation.new(vacation_params)
-        vacation.user_id = current_user.id
+        @vacation = Vacation.new(vacation_params)
+        @vacation.user_id = current_user.id
       
         # もし画像がアップロードされていない場合
         if params[:vacation][:image].blank?
@@ -26,10 +26,10 @@ class VacationsController < ApplicationController
           vacation.image = ActionController::Base.helpers.asset_path('default_image.jpg')
         end
       
-        if vacation.save
-          # 保存成功の処理
+        if @vacation.save
+          redirect_to vacations_path, notice: '投稿が成功しました。'
         else
-          # 保存失敗の処理
+          render :new
         end
       end
     
@@ -60,6 +60,6 @@ class VacationsController < ApplicationController
     
       private
       def vacation_params
-        params.require(:vacation).permit(:name, :date, :price, :place, :people, :image, :other_attributes, :overall)
+        params.require(:vacation).permit(:name, :date, :price, :place, :people, :image, :other_attributes, :overall, :review)
       end
 end
