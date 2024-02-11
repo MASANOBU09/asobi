@@ -1,6 +1,6 @@
 databases:
-  - name: asobi_DB
-    databaseName: asobi_db_cgtb
+  - name: asobi_DB1
+    databaseName: asobi_db1_cgtb
     user: asobi
     region: singapore
 
@@ -15,7 +15,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: asobi_DB
+          name: asobi_DB1
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
